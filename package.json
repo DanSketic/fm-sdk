@@ -1,7 +1,7 @@
 {
 	"name": "@filing-manager/sdk",
 	"version": "0.5.4",
-	"description": "Graviton SDK to develop plugins.",
+	"description": "Filing-Manager SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
 		"gvsdk": "src/cli.js"
