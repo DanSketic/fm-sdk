@@ -1,5 +1,5 @@
-# 🧵 Graviton SDK
-SDK to develop plugins for [Graviton Editor](https://github.com/Graviton-Code-Editor/Graviton-App)
+# 🧵 Filing-Manager SDK
+SDK to develop plugins for [Filing.Manager](https://github.com/DanSketic/Filing-Manager)
 
 It makes use of Webpack, ts-loader and babel under the hood.
 
@@ -57,8 +57,4 @@ This will generate a release of the plugin you are located in.
 
 ### 🤖 Where is this being used?
 
-* [Deno Graviton](https://github.com/marc2332/deno-graviton)
-* [Cargo Graviton](https://github.com/marc2332/cargo-graviton)
-* [Flutter Graviton](https://github.com/Graviton-Code-Editor/flutter-plugin)
-
-And Graviton Editor itself.
+And Filing-Manager itself.
