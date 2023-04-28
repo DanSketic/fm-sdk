@@ -26,8 +26,8 @@
 	},
 	"author": "Marc Espín Sanz <mespinsanz@gmail.com>",
 	"license": "MIT",
-	"repository": "https://github.com/Graviton-Code-Editor/graviton-sdk",
-	"bugs": "https://github.com/Graviton-Code-Editor/graviton-sdk/issues",
+	"repository": "https://github.com/DanSketic/filing-manager-sdk",
+	"bugs": "https://github.com/DanSketic/filing-manager-sdk/issues",
 	"dependencies": {
 		"@babel/core": "^7.11.5",
 		"@babel/plugin-transform-runtime": "^7.11.5",
