@@ -1,5 +1,5 @@
 # 🧵 Filing-Manager SDK
-SDK to develop plugins for [Filing.Manager](https://github.com/DanSketic/Filing-Manager)
+SDK to develop plugins for [Filing-Manager](https://github.com/DanSketic/Filing-Manager)
 
 It makes use of Webpack, ts-loader and babel under the hood.
 
