@@ -1,5 +1,5 @@
 {
-	"name": "@gveditor/sdk",
+	"name": "@filing-manager/sdk",
 	"version": "0.5.4",
 	"description": "Graviton SDK to develop plugins.",
 	"main": "bin/index.js",
