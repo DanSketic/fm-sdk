@@ -1,5 +1,5 @@
 # 🧵 Filing-Manager SDK
-SDK to develop plugins for [Filing-Manager](https://github.com/DanSketic/Filing-Manager)
+SDK to develop plugins for [Filing-Manager](https://github.com/DanSketic/Filing-Manager-App)
 
 It makes use of Webpack, ts-loader and babel under the hood.
 
@@ -7,7 +7,7 @@ It makes use of Webpack, ts-loader and babel under the hood.
 Installation:
 
 ```shell
-npm install --save-dev @gveditor/sdk
+npm install --save-dev @filing-manager/sdk
 ```
 
 Develop plugin for development:
