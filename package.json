@@ -4,7 +4,7 @@
 	"description": "Filing-Manager SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
-		"gvsdk": "src/cli.js"
+		"fmsdk": "src/cli.js"
 	},
 	"exports": {
 		".": "./bin/index.js",
