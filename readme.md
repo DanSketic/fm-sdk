@@ -12,12 +12,12 @@ npm install --save-dev @filing-manager/sdk
 
 Develop plugin for development:
 ```shell
-gvsdk --project ./ --target plugin --mode dev
+fmsdk --project ./ --target plugin --mode dev
 ```
 
 Build plugin for production:
 ```shell
-gvsdk --project ./ --target plugin --mode release
+fmsdk --project ./ --target plugin --mode release
 ```
 
 ### 📜 Usage
@@ -50,7 +50,7 @@ CLI parameters:
 Example:
 
 ```ts
-gvsdk --target plugin --project . --mode release
+fmsdk --target plugin --project . --mode release
 ```
 
 This will generate a release of the plugin you are located in.
