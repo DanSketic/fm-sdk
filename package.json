@@ -24,7 +24,7 @@
 		"test:release:theme": "node src/cli.js --target theme --project ./test/theme --mode release",
 		"test:types": "tsc types/index.ts --outDir temp"
 	},
-	"author": "Marc Espín Sanz <mespinsanz@gmail.com>",
+	"author": "DanSketic <dansketic@gmail.com>",
 	"license": "MIT",
 	"repository": "https://github.com/DanSketic/filing-manager-sdk",
 	"bugs": "https://github.com/DanSketic/filing-manager-sdk/issues",
