@@ -7,7 +7,7 @@ It makes use of Webpack, ts-loader and babel under the hood.
 Installation:
 
 ```shell
-npm install --save-dev @filing-manager/sdk
+npm install --save-dev @fm/sdk
 ```
 
 Develop plugin for development:

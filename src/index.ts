@@ -1,3 +1,4 @@
+/* tslint:disable */
 import * as path from 'path'
 import { zip } from 'zip-a-folder'
 import fs from 'fs-extra'
@@ -199,13 +200,13 @@ class Bundler {
 		})
 	}
 	public copyAssets(){
-		return new Promise(async (resolve) => {
+		return new Promise<void>(async (resolve) => {
 			const dirProject = path.join(this.distPath, 'package.json')
 			const { assets } = this.packageConf
 			
 			if(assets){
 				await Promise.all(assets.map((asset: string) => {
-					return new Promise(res => {
+					return new Promise<void>(res => {
 						const assetPath = path.join(this.projectPath, asset)
 						const assetDistPath = path.join(this.distPath, asset)
 						ncp(assetPath, assetDistPath, {}, (err: string) => {

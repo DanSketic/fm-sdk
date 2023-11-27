@@ -1,7 +1,7 @@
 {
-	"name": "@filing-manager/sdk",
+	"name": "@fm/sdk",
 	"version": "0.5.4",
-	"description": "Filing-Manager SDK to develop plugins.",
+	"description": "Filing-Manager 2 SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
 		"fmsdk": "src/cli.js"
@@ -26,33 +26,33 @@
 	},
 	"author": "DanSketic <dansketic@gmail.com>",
 	"license": "MIT",
-	"repository": "https://github.com/DanSketic/filing-manager-sdk",
-	"bugs": "https://github.com/DanSketic/filing-manager-sdk/issues",
+	"repository": "https://github.com/DanSketic/fm-sdk",
+	"bugs": "https://github.com/DanSketic/fm-sdk/issues",
 	"dependencies": {
-		"@babel/core": "^7.11.5",
-		"@babel/plugin-transform-runtime": "^7.11.5",
-		"@babel/preset-env": "^7.11.5",
-		"@babel/preset-react": "^7.10.4",
-		"@types/node": "^14.6.2",
-		"babel-loader": "^8.1.0",
+		"@babel/core": "^7.23.3",
+		"@babel/plugin-transform-runtime": "^7.23.4",
+		"@babel/preset-env": "^7.23.3",
+		"@babel/preset-react": "^7.23.3",
+		"@types/node": "^20.10.0",
+		"babel-loader": "^9.1.3",
 		"buffer": "^6.0.3",
-		"commander": "^5.0.0",
+		"commander": "^11.1.0",
 		"crypto-browserify": "^3.12.0",
-		"elliptic": "^6.5.3",
-		"file-loader": "^6.1.0",
-		"fs-extra": "^9.0.0",
-		"lodash": "^4.17.19",
+		"elliptic": "^6.5.4",
+		"file-loader": "^6.2.0",
+		"fs-extra": "^11.1.1",
+		"lodash": "^4.17.21",
 		"ncp": "^2.0.0",
 		"path-browserify": "^1.0.1",
 		"shebang-loader": "0.0.1",
 		"stream-browserify": "^3.0.0",
-		"ts-loader": "^8.0.13",
-		"typescript": "^4.0.2",
-		"webpack": "^5.11.1",
-		"zip-a-folder": "1.1.0"
+		"ts-loader": "^9.5.1",
+		"typescript": "^5.3.2",
+		"webpack": "^5.89.0",
+		"zip-a-folder": "3.1.3"
 	},
 	"devDependencies": {
-		"react": "^16.13.1",
-		"webpack-cli": "^3.3.12"
+		"react": "^18.2.0",
+		"webpack-cli": "^5.1.4"
 	}
 }
