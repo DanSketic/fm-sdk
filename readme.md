@@ -7,17 +7,17 @@ It makes use of Webpack, ts-loader and babel under the hood.
 Installation:
 
 ```shell
-npm install --save-dev @fm/sdk
+npm install --save-dev @fm2/sdk
 ```
 
 Develop plugin for development:
 ```shell
-fmsdk --project ./ --target plugin --mode dev
+fm2sdk --project ./ --target plugin --mode dev
 ```
 
 Build plugin for production:
 ```shell
-fmsdk --project ./ --target plugin --mode release
+fm2sdk --project ./ --target plugin --mode release
 ```
 
 ### 📜 Usage
@@ -50,7 +50,7 @@ CLI parameters:
 Example:
 
 ```ts
-fmsdk --target plugin --project . --mode release
+fm2sdk --target plugin --project . --mode release
 ```
 
 This will generate a release of the plugin you are located in.

@@ -1,10 +1,10 @@
 {
-	"name": "@fm/sdk",
+	"name": "@fm2/sdk",
 	"version": "0.5.4",
 	"description": "Filing-Manager 2 SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
-		"fmsdk": "src/cli.js"
+		"fm2sdk": "src/cli.js"
 	},
 	"exports": {
 		".": "./bin/index.js",

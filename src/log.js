@@ -2,13 +2,13 @@ const chalk = require('chalk')
 
 const log = {
 	info(text){
-		console.log(chalk.bold.bgBlue.rgb(255,255,255)(`\n [fmsdk] info -> `), chalk.underline(`${text} \n`))
+		console.log(chalk.bold.bgBlue.rgb(255,255,255)(`\n [fm2sdk] info -> `), chalk.underline(`${text} \n`))
 	},
 	success(text){
-		console.log(chalk.bold.bgGreen(`\n [fmsdk] -> `), chalk.white(`${text} \n`))
+		console.log(chalk.bold.bgGreen(`\n [fm2sdk] -> `), chalk.white(`${text} \n`))
 	},
 	error(text){
-		console.log(chalk.bold.bgRed(`\n [fmsdk] error -> `), chalk.white(`\n\n ${text} \n`))
+		console.log(chalk.bold.bgRed(`\n [fm2sdk] error -> `), chalk.white(`\n\n ${text} \n`))
 	}
 }
 
