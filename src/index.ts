@@ -1,4 +1,3 @@
-/* tslint:disable */
 import * as path from 'path'
 import { zip } from 'zip-a-folder'
 import fs from 'fs-extra'
