@@ -40,10 +40,11 @@ function validateMode( mode ){
 }
 
 (async () => {
-	const target = validateTarget(program.target)
-	const mode = validateMode(program.mode)
-	const projectPath = path.join(process.cwd(), program.project)
-	const webpackTarget = program.platform || 'node'
+	const options = program.opts()
+	const target = validateTarget(options.target)
+	const mode = validateMode(options.mode)
+	const projectPath = path.join(process.cwd(), options.project)
+	const webpackTarget = options.platform || 'node'
 
 	if( target && projectPath ){
 		switch(mode){
