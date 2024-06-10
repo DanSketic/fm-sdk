@@ -159,7 +159,7 @@ class Bundler {
 							}
 							return false
 						}
-					}, (err: string) => {
+					}, (err) => {
 						resolve(...[err])
 					})
 					break;
@@ -173,7 +173,7 @@ class Bundler {
 							}
 							return false
 						}
-					}, (err: string) => {
+					}, (err) => {
 						resolve(...[err])
 					})
 					break;
@@ -208,7 +208,7 @@ class Bundler {
 					return new Promise<void>(res => {
 						const assetPath = path.join(this.projectPath, asset)
 						const assetDistPath = path.join(this.distPath, asset)
-						ncp(assetPath, assetDistPath, {}, (err: string) => {
+						ncp(assetPath, assetDistPath, {}, (err) => {
 							if(err) console.log(err)
 							res()
 						})
@@ -216,7 +216,7 @@ class Bundler {
 				}))
 			}
 			
-			fs.copyFile(this.packagePath, dirProject, (err: string) => {
+			fs.copyFile(this.packagePath, dirProject, (err) => {
 				if (err) throw err;
 				resolve()
 			});

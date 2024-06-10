@@ -1,5 +1,7 @@
 {
 	"compilerOptions": {
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
 		"sourceMap": true,
 		"moduleResolution": "node",
 		"esModuleInterop": true,
