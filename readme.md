@@ -7,7 +7,7 @@ It makes use of Webpack, ts-loader and babel under the hood.
 Installation:
 
 ```shell
-npm install --save-dev @fm2/sdk
+pnpm add -D @fm2/sdk
 ```
 
 Develop plugin for development:

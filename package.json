@@ -1,6 +1,6 @@
 {
 	"name": "@fm2/sdk",
-	"version": "0.5.9",
+	"version": "0.6.0",
 	"description": "Filing-Manager 2 SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
@@ -11,7 +11,7 @@
 		"./types": "./types/index.ts"
 	},
 	"scripts": {
-		"prepare": "npm run test:types && npm run build",
+		"prepare": "pnpm test:types && pnpm build",
 		"build": "tsc  --project . ",
 		"build:types": "tsc types/index",
 		"test:release:plugin.ts": "node src/cli.js --target plugin --project ./test/plugin.ts --mode release",
@@ -49,13 +49,13 @@
 		"ts-loader": "^9.5.1",
 		"tslib": "^2.6.3",
 		"typescript": "^5.4.5",
-		"webpack": "^5.91.0",
-		"zip-a-folder": "3.1.6"
+		"webpack": "^5.92.1",
+		"zip-a-folder": "3.1.7"
 	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.4",
 		"@types/ncp": "^2.0.8",
-		"@types/node": "^20.14.2",
+		"@types/node": "^20.14.6",
 		"react": "^18.3.1",
 		"webpack-cli": "^5.1.4"
 	}
