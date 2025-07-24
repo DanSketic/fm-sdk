@@ -1,6 +1,6 @@
 {
 	"name": "@fm2/sdk",
-	"version": "0.6.2",
+	"version": "0.5.10",
 	"description": "Filing-Manager 2 SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
@@ -11,7 +11,7 @@
 		"./types": "./types/index.ts"
 	},
 	"scripts": {
-		"prepare": "pnpm test:types && pnpm build",
+		"prepare": "npm run test:types && npm run build",
 		"build": "tsc  --project . ",
 		"build:types": "tsc types/index",
 		"test:release:plugin.ts": "node src/cli.js --target plugin --project ./test/plugin.ts --mode release",
@@ -29,34 +29,34 @@
 	"repository": "https://github.com/DanSketic/fm-sdk",
 	"bugs": "https://github.com/DanSketic/fm-sdk/issues",
 	"dependencies": {
+		"@babel/core": "^7.28.0",
+		"@babel/plugin-transform-runtime": "^7.28.0",
+		"@babel/preset-env": "^7.28.0",
+		"@babel/preset-react": "^7.27.1",
+		"babel-loader": "^9.2.1",
 		"buffer": "^6.0.3",
 		"chalk": "^4.1.2",
 		"commander": "^12.1.0",
-		"crypto-browserify": "^3.12.0",
-		"elliptic": "^6.5.5",
-		"fs-extra": "^11.2.0",
+		"crypto-browserify": "^3.12.1",
+		"elliptic": "^6.6.1",
+		"file-loader": "^6.2.0",
+		"fs-extra": "^11.3.0",
 		"lodash": "^4.17.21",
 		"ncp": "^2.0.0",
 		"path-browserify": "^1.0.1",
+		"shebang-loader": "0.0.1",
 		"stream-browserify": "^3.0.0",
-		"tslib": "^2.6.3",
-		"webpack": "^5.92.1",
-		"zip-a-folder": "3.1.7"
+		"ts-loader": "^9.5.2",
+		"tslib": "^2.8.1",
+		"typescript": "^5.8.3",
+		"webpack": "^5.100.2",
+		"zip-a-folder": "3.1.9"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.24.7",
-		"@babel/plugin-transform-runtime": "^7.24.7",
-		"@babel/preset-env": "^7.24.7",
-		"@babel/preset-react": "^7.24.7",
 		"@types/fs-extra": "^11.0.4",
 		"@types/ncp": "^2.0.8",
-		"@types/node": "^20.14.6",
-		"babel-loader": "^9.1.3",
-		"file-loader": "^6.2.0",
-		"react": "^18.3.1",
-		"shebang-loader": "0.0.1",
-		"ts-loader": "^9.5.1",
-		"typescript": "^5.4.5",
-		"webpack-cli": "^5.1.4"
+		"@types/node": "^24.1.0",
+		"react": "^19.1.0",
+		"webpack-cli": "^6.0.1"
 	}
 }
