@@ -1,4 +1,4 @@
-import * as path from 'path'
+import path from 'path';
 import { zip } from 'zip-a-folder'
 import fs from 'fs-extra'
 import { ncp } from 'ncp'
@@ -146,18 +146,26 @@ class Bundler {
 			switch(this.pluginType){
 				case 'plugin':
 				
-					this.compiler().run((err: any,stats: any) => {
-						resolve(stats ? stats.hasErrors() ? stats.toJson().errors : err : null)
-					})
+					const compilerInstance = this.compiler();
+					if (compilerInstance) {
+						compilerInstance.run((err: any, stats: any) => {
+							resolve(stats ? stats.hasErrors() ? stats.toJson().errors : err : null)
+						});
+					} else {
+						resolve(new Error('Compiler instance is null'));
+					}
 
 					break;
 				case 'iconpack':
 					ncp(this.projectPath, this.distPath, {
-						filter: (dir: string)=> {
-							if(allowedDirs.includes(path.basename(dir)) || dir === this.projectPath ){
-								return true
-							}
-							return false
+						filter: (itemPath: string) => {
+							// Mindig engedélyezzük a projekt gyökerét
+							if (itemPath === this.projectPath) return true;
+							// Engedélyezzük az allowedDirs-ben lévőket (pl. icons mappa)
+							if (allowedDirs.includes(path.basename(itemPath))) return true;
+							// Engedélyezzük az icons mappán belüli összes fájlt és almappát
+							if (itemPath.startsWith(path.join(this.projectPath, 'icons'))) return true;
+							return false;
 						}
 					}, (err) => {
 						resolve(...[err])
@@ -188,12 +196,17 @@ class Bundler {
 				fs.mkdirSync(this.distPath)
 			}
 			if(this.pluginType == 'plugin'){
-				this.compiler({
+				const compilerInstance = this.compiler({
 					dev: true
-				}).watch({},(err: any, stats: any) => {
-					const info = stats.toJson();
-					callback(stats.hasErrors() ? info.errors : null,stats)
-				})
+				});
+				if (compilerInstance) {
+					compilerInstance.watch({}, (err: any, stats: any) => {
+						const info = stats.toJson();
+						callback(stats.hasErrors() ? info.errors : null, stats)
+					});
+				} else {
+					callback(new Error('Compiler instance is null'), null);
+				}
 				resolve(this)
 			}
 		})

@@ -1,10 +1,10 @@
 {
 	"name": "@fm2/sdk",
-	"version": "0.5.10",
+	"version": "1.0.2",
 	"description": "Filing-Manager 2 SDK to develop plugins.",
 	"main": "bin/index.js",
 	"bin": {
-		"fm2sdk": "src/cli.js"
+		"fm2sdk": "src/cli.ts"
 	},
 	"exports": {
 		".": "./bin/index.js",
@@ -14,14 +14,14 @@
 		"prepare": "npm run test:types && npm run build",
 		"build": "tsc  --project . ",
 		"build:types": "tsc types/index",
-		"test:release:plugin.ts": "node src/cli.js --target plugin --project ./test/plugin.ts --mode release",
-		"test:release:plugin.tsx": "node src/cli.js --target plugin --project ./test/plugin.tsx --mode release",
-		"test:release:plugin.js": "node src/cli.js --target plugin --project ./test/plugin.js --mode release",
-		"test:release:plugin.jsx": "node src/cli.js --target plugin --project ./test/plugin.jsx --mode release",
-		"test:release:plugin.assets": "node src/cli.js --target plugin --project ./test/plugin.assets --mode release",
-		"test:watch:plugin": "node src/cli.js --target plugin --project ./test/plugin.ts",
-		"test:release:iconpack": "node src/cli.js --target iconpack --project ./test/iconpack --mode release",
-		"test:release:theme": "node src/cli.js --target theme --project ./test/theme --mode release",
+		"test:release:plugin.ts": "node bin/cli.js --target plugin --project ./test/plugin.ts --mode release",
+		"test:release:plugin.tsx": "node bin/cli.js --target plugin --project ./test/plugin.tsx --mode release",
+		"test:release:plugin.js": "node bin/cli.js --target plugin --project ./test/plugin.js --mode release",
+		"test:release:plugin.jsx": "node bin/cli.js --target plugin --project ./test/plugin.jsx --mode release",
+		"test:release:plugin.assets": "node bin/cli.js --target plugin --project ./test/plugin.assets --mode release",
+		"test:watch:plugin": "node bin/cli.js --target plugin --project ./test/plugin.ts",
+		"test:release:iconpack": "node bin/cli.js --target iconpack --project ./test/iconpack --mode release",
+		"test:release:theme": "node bin/cli.js --target theme --project ./test/theme --mode release",
 		"test:types": "tsc types/index.ts --outDir temp"
 	},
 	"author": "DanSketic <dansketic@gmail.com>",
@@ -33,10 +33,10 @@
 		"@babel/plugin-transform-runtime": "^7.28.0",
 		"@babel/preset-env": "^7.28.0",
 		"@babel/preset-react": "^7.27.1",
-		"babel-loader": "^9.2.1",
+		"babel-loader": "^10.0.0",
 		"buffer": "^6.0.3",
-		"chalk": "^4.1.2",
-		"commander": "^12.1.0",
+		"chalk": "^5.4.1",
+		"commander": "^14.0.0",
 		"crypto-browserify": "^3.12.1",
 		"elliptic": "^6.6.1",
 		"file-loader": "^6.2.0",
@@ -49,14 +49,15 @@
 		"ts-loader": "^9.5.2",
 		"tslib": "^2.8.1",
 		"typescript": "^5.8.3",
-		"webpack": "^5.100.2",
+		"webpack": "^5.101.0",
 		"zip-a-folder": "3.1.9"
 	},
 	"devDependencies": {
 		"@types/fs-extra": "^11.0.4",
 		"@types/ncp": "^2.0.8",
 		"@types/node": "^24.1.0",
-		"react": "^19.1.0",
+		"@types/react": "^19.1.8",
+		"react": "^19.1.1",
 		"webpack-cli": "^6.0.1"
 	}
 }
