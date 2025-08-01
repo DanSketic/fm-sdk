@@ -1,0 +1,13 @@
+.cache
+.git
+temp
+node_modules
+samples
+src
+test
+README.md
+tsconfig.json
+package-lock.json
+vite.config.js
+.editorconfig
+LICENSE.md

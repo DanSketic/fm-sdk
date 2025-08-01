@@ -11,7 +11,7 @@ const allowedDirs = [
 
 interface BundlerArgs {
 	projectPath: string
-	distPath: string
+	distPath?: string // <-- opcionális
 	webpackTarget: string
 }
 
@@ -246,4 +246,4 @@ class Bundler {
 	}
 }
 
-module.exports = { Bundler }
+export default Bundler

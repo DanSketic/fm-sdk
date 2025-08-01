@@ -2,9 +2,9 @@
 
 import { program } from "commander"
 import path from "path"
+import Bundler from "./index"
 import log from "./log"
 
-const { Bundler } = require('../bin/index.js')
 
 type TargetType = 'plugin' | 'iconpack' | 'theme' | false
 type ModeType = 'release' | 'dev'
